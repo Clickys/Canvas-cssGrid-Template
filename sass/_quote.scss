@@ -1,0 +1,53 @@
+.quote {
+    grid-row: 6 / 7;
+    background-image: url(../img/testimonials.jpg);
+    background-size: cover;
+    background-position: center;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: start;
+    align-items: center;
+
+
+    &__details {
+        grid-column: 2 / 3;
+        display: grid;
+        grid-row-gap: 2rem;
+        justify-items: center;
+        align-items: center;
+        
+        color: white;
+        text-align: center;
+
+
+        h2 {
+            line-height: 1.6;
+            font-size: 24px;
+            letter-spacing: 1px;
+            font-weight: 300;
+            font-family: source sans pro,sans-serif;
+            font-style: normal;
+
+            &:before {
+                content: open-quote;
+                font-size: 3rem;
+            }
+            &:after {
+                content: close-quote;
+                font-size: 3rem;
+            }
+       
+        }
+
+        p {
+            font-size: 1.8rem;
+            font-weight: 500;
+            letter-spacing: 2px;
+
+
+        }
+
+    }
+}
+

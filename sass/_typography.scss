@@ -1,0 +1,44 @@
+// HEADING STYLES
+
+.heading-1 {
+    font-family: roboto,sans-serif;
+    font-weight: 700;
+    font-size: 12.4rem;
+    color: #fff;
+
+}
+
+.heading-2 {
+    letter-spacing: 1px;
+    font-weight: 300;
+    color: #444;
+    line-height: 1.5;
+    font-size: 2.5rem;
+    text-align: center;
+
+}
+
+.heading-4 {
+    color: #999;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+.heading-3 {
+    color: #444;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 300;
+    font-size: 2.5rem;
+    line-height: 1.5;
+
+}
+
+.blog__btn {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #1abc9c;
+    cursor: pointer;
+    justify-self: start;
+
+}

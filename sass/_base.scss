@@ -1,0 +1,104 @@
+// PROJECT COLORS
+
+$blue: #007bff;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #28a745;
+$teal: #20c997;
+$cyan: #17a2b8;
+$white: #fff;
+$gray: #6c757d;
+$gray-dark: #343a40;
+$primary: #007bff;
+$secondary: #6c757d;
+$success: #28a745;
+$info: #17a2b8;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #f8f9fa;
+$dark: #343a40;
+
+// MEDIA QUERIES
+
+$breakpoint-xs: 0;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 10 / 16 = 62.5% // 10px = 1rem; 
+    
+}
+
+body {
+    font-family:  roboto, sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 7rem calc(100vh - 7rem) repeat(3, min-content) 50rem;
+
+
+    grid-template-columns: 1fr ;
+    
+}
+
+// BUTTON STYLES
+
+.btn--1 {
+    border: 2px solid #fff;
+    background-color: transparent;
+    border-radius: 20px;
+    color: white;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 3.6rem;
+    padding: 0 2.2rem; 
+    transition: all .8s;
+    font-weight: 700;
+
+    &:hover {
+        background-color: white;
+        color: black;
+    }
+}
+
+.btn--2 {
+    border: 2px solid #fff;
+    background-color: white;
+    border-radius: 20px;
+    border-color: #444;
+    color: black;
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    line-height: 3.6rem;
+    padding: 0 2.2rem; 
+    transition: all .8s;
+    font-weight: 500;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.2);
+
+    &:hover {
+        background-color: #444;
+        color: white;
+    }
+}
+
