@@ -1,4 +1,51 @@
 .about {
-    background-color: $info;
     grid-row: 9 / 10;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 50rem;
+
+    margin-top: 10rem;
+    background-color: rgb(245, 245, 245);
+
+    &__map {
+        grid-column: 1 / 2;
+        background-color: rgb(229, 227, 223);
+    }
+
+    &__head {
+        grid-column: 2 / 3;
+        margin-left: 5rem;
+        display: grid;
+        align-content: center;
+        grid-row-gap: 2rem;
+
+       h3 {
+           font-size: 2.4rem;
+           color: #444;
+           line-height: 1.5;
+           letter-spacing: 1px;
+           font-weight: 400;
+       }
+
+        &__location {
+            line-height: 1.7;
+            font-size: 1.6rem;
+        }
+
+        &__country {
+            font-weight: 500;
+            
+        }
+
+        &__add {
+            color: #555;
+        }
+
+        &-bold {
+            font-weight: 500;
+            
+        }
+
+    }
 }

@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script> 
 </head>
 <body class="container">
     <div class="top-menu">
@@ -191,9 +192,77 @@
             </a>
         </div>
     </div>
-    <div class="about">About</div>
-    <div class="contact">Contacts</div>
-    <div class="sidemenu">Side Menu</div>
-    <div class="footer">Footer</div>
+    <div class="about">
+        <div class="about__map" id="map">
+       
+        </div>
+        <div class="about__head">
+            <h3>Our Headquarters</h3>
+            <div class="about__head__location about__head__location--1">
+                <p class="about__head__country">North America:</p>
+                <p class="about__head__add">795 Folsom Ave, Suite 600</p>
+                <p class="about__head__add">San Francisco, CA 94107</p>
+            </div>
+            <div class="about__head__location about__head__location--2">
+                <p class="about__head__country">Europe:</p>
+                <p class="about__head__add">795 Folsom Ave, Suite 600</p>
+                <p class="about__head__add">San Francisco, CA 94107</p>
+            </div>
+            <div class="about__head__location about__head__location--3">
+                <p><span class="about__head-bold">Phone:</span> (91) 8547 632521</p>
+                <p ><span class="about__head-bold">Fax:</span> (91) 11 4752 1433</p>
+                <p><span class="about__head-bold">Email:</span> info@canvas.com</p>
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+        <form class="contact__form" action="#">
+            <div class="contact__name">
+                <input class="contact__style" type="text" placeholder="Name" required>
+            </div>
+            <div class="contact__email">
+                <input class="contact__style" type="text" placeholder="Email Address" required>
+            </div>
+            <div class="contact__phone">
+                <input class="contact__style" type="text" placeholder="Phone" required>
+            </div>
+            <div class="contact__subject">
+                <input class="contact__style" type="text" placeholder="Subject" required>
+            </div>
+            <div class="contact__message">
+                <textarea class="contact__style" name="message" cols="30" rows="1" placeholder="Your Message"></textarea>
+            </div>
+            <button class="btn--2 contact__button">Send message</button>
+            <p>We'll do our best to get back to you within 6-8 working hours.</p>
+        </form>
+
+       
+    </div>
+    <div class="footer">
+        <div class="footer__site footer__site-links">
+            <h3>Site links</h3>
+            <a href="#">Top</a>
+            <a href="#">Top</a>
+            <a href="#">Top</a>
+            <a href="#">Top</a>
+            <a href="#">Top</a>
+            <a href="#">Top</a>
+        </div>
+        <div class="footer__subscribe">
+            <h1>Subscribe</h1>
+            <input type="text">
+            <button class="btn--1">SUbscribe now</button>
+        </div>
+        <div class="footer__contact">
+            <h3>Contact</h3>
+            <p>795 Folsom Ave, Suite 600</p>
+            <p>San Francisco, CA 94107</p>
+        </div>
+
+
+    </div>
+
+   
+    <script src="app.js"></script>
 </body>
 </html>

@@ -1,4 +1,49 @@
 .contact {
-    background-color: $green;
     grid-row: 10 / 11;
+    &__form {
+        display: grid;
+        grid-template-columns: 50rem 50rem;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-content: center;
+        grid-column-gap: 2rem;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+    }
+    &__style {
+        font-size: 28px;
+        border: none;
+        padding: 10px;
+        font-size: 20px;
+        border-bottom: 1px solid lightgray;
+        transition: all 0.5s;
+        width: 100%;
+        &:focus {
+            border-bottom: 1px solid #e42c3e;
+        }
+        &::placeholder {
+            color: grey;
+        }
+    }
+    &__message {
+        grid-column: 1 / -1;
+        border: none;
+        textarea {
+            border-bottom: 1px solid lightgray;
+            resize: none;
+        }
+    }
+    &__button {
+        grid-column: 1 / -1;
+        justify-content: center;
+        justify-self: center;
+        margin-top: 2rem;
+    }
+    p {
+        grid-column: 1 / -1;
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: 300;
+        margin-top: 2rem;
+        color: darkgray;
+    }
 }
