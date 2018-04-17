@@ -17,9 +17,23 @@
     display: grid;
     grid-template-columns: 1fr 3fr;
 
+    @media only screen and (max-width: 950px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr min-content;
+
+    
+        
+    }
+
     &__logo {
         margin-left: 2rem;
         grid-column: 1 / 2;
+
+        @media only screen and (max-width: 950px) {
+            grid-column: 1 / -1;
+            justify-self: center;
+            
+        }
         
     }
 
@@ -33,6 +47,14 @@
         align-items: center;
         grid-column-gap: 2rem;
         grid-row-gap: 1rem;
+
+        @media only screen and (max-width: 950px) {
+           grid-column: 1 / -1;
+           grid-row: 2 / 3;
+           justify-content: center;
+           align-self: start;
+            
+        }
         
 
         &__item {
@@ -57,6 +79,10 @@
             height: 2px;
             width: 2rem;
             display: block;
+
+            @media only screen and (max-width: 950px) {
+                display: none;
+            }
             
             
 

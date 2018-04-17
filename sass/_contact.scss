@@ -8,6 +8,12 @@
         grid-column-gap: 2rem;
         margin-top: 10rem;
         margin-bottom: 10rem;
+
+        @media only screen and (max-width: 500px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            justify-content: center;
+        }
     }
     &__style {
         font-size: 28px;
