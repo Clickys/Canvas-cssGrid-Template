@@ -2,10 +2,13 @@
     grid-row: 8 / 9;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(12.5rem, 20rem));
-    grid-template-rows: 1fr;
-    grid-column-gap:8rem;
-    justify-content: center ;
+    grid-template-columns: repeat(auto-fit, minmax(max-content, 1fr));
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 3rem;
+    justify-items: center ;
+    align-items: center;
+    
+
     
 
 
@@ -38,6 +41,7 @@
         img {
             display: block;
             width: 100%;
+         
             background-size: cover;
         }
     }

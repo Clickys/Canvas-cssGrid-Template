@@ -65,7 +65,7 @@ body {
     grid-template-rows: 7rem calc(100vh - 7rem) repeat(3, min-content) 50rem;
 
 
-    grid-template-columns: 1fr ;
+    grid-auto-rows: min-content;
 
     
 }

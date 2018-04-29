@@ -4,17 +4,14 @@
 
     display: grid;
     grid-template-rows: min-content 1fr;
-    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-columns: 1fr repeat(auto-fit, minmax(55rem, 1fr)) 1fr;
 
 
     margin-top: 20rem;
     margin-bottom: 10rem;
     background-color: #f9f9f9;
-    width: 100vw;
+  
 
-    @media only screen and (max-width: 500px) {
-        align-content: start;
-    }
 
 
     h2 {
@@ -28,7 +25,6 @@
         grid-row: 2 / 3;
         grid-column: 2 / 4;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(55rem, 1fr));
         grid-row-gap: 2rem;
         
   
@@ -62,6 +58,7 @@
                 width: 100%;
                 object-fit: cover;
 
+
             }
             p {          
                 grid-column: 2 / 3;
@@ -69,6 +66,9 @@
 
                 font-size: 1.6rem;
                 color: #999;
+
+                
+
             }
 
             h3 {
